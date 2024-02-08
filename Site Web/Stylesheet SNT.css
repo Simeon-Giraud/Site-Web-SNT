@@ -1,0 +1,267 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    gap: 30px;
+    background: linear-gradient(180deg,
+    rgba(255, 255, 255, 0.28) 0%,
+    rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(30px);
+    border-radius: 20px;
+    width: device-width;
+    box-shadow: 0 0.5px 0 1px rgba(255, 255, 255, 0.23) inset, 0 1px 0 0 rgba(255, 255, 255, 0.66) inset, 0 4px 16px rgba(0, 0, 0, 0.12);
+    z-index: 10;
+    height: 70px
+}
+
+h2 {
+    background: rgba(0, 191, 255, 0);
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+
+main {
+padding: 20px;
+}
+
+#homepage {
+background-image: url('https://images6.alphacoders.com/109/1091508.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+
+.carre {
+    position: absolute;
+    z-index: 10;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center; 
+gap: 30px;
+background: linear-gradient(
+180deg,
+rgba(255, 255, 255, 0.28) 0%,
+rgba(255, 255, 255, 0) 100%);
+backdrop-filter: blur(30px);
+border-radius: 20px;
+width: 50%;
+box-shadow: 0 0.5px 0 1px rgba(255, 255, 255, 0.23) inset, 0 1px 0 0 rgba(255, 255, 255, 0.66) inset, 0 4px 16px rgba(0, 0, 0, 0.12);
+height: 375px;
+margin-left: 25%;
+}
+
+.btn {
+    padding: 12px;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+
+.btnmaths:hover {
+box-shadow: 0 0.5px 0 1px rgba(255, 255, 255, 0.23) inset, 0 1px 0 0 rgba(255, 255, 255, 0.66) inset, 0 4px 16px rgba(0, 0, 0, 0.12), 5px 10px 10px 0px rgba(0,0,0,0.3);
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 100%);
+transform: scale(1.1);
+}
+
+.btnsnt:hover {
+    box-shadow: 0 0.5px 0 1px rgba(255, 255, 255, 0.23) inset, 0 1px 0 0 rgba(255, 255, 255, 0.66) inset, 0 4px 16px rgba(0, 0, 0, 0.12), 5px 10px 10px 0px rgba(0,0,0,0.3);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 100%);
+    transform: scale(1.1);
+    }
+
+.btnprojets:hover {
+    box-shadow: 0 0.5px 0 1px rgba(255, 255, 255, 0.23) inset, 0 1px 0 0 rgba(255, 255, 255, 0.66) inset, 0 4px 16px rgba(0, 0, 0, 0.12), 5px 10px 10px 0px rgba(0,0,0,0.3);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 100%);
+    transform: scale(1.1);
+    }
+
+.btninfo:hover {
+    box-shadow: 0 0.5px 0 1px rgba(255, 255, 255, 0.23) inset, 0 1px 0 0 rgba(255, 255, 255, 0.66) inset, 0 4px 16px rgba(0, 0, 0, 0.12), 5px 10px 10px 0px rgba(0,0,0,0.3);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 100%);
+    transform: scale(1.1)
+    }
+
+#logo {
+width: 30%;
+position: absolute;
+left: 35%;
+top: 500px;
+}
+
+#maths {
+width: 20%;
+position: absolute;
+top: 225px;
+left: 2.5%;
+}
+
+#snt {
+width: 20%;
+position: absolute;
+top: 225px;
+right: 2.5%;
+}
+
+.retour {
+Background: rgba(0, 191, 255,0);
+padding: 10px 20px;
+font-size: 16px;
+border: none;
+cursor: pointer;
+margin: 0 10px;
+border-radius: 10px;
+transition-duration: 0.5s;
+position: absolute;
+left: 10px;
+top: 16px
+}
+
+#choisirclasse {
+background: #999999;
+}
+
+.six {
+height: 500px;
+width: 20%;
+position: absolute;
+left: 12.5%;
+top: 20%
+}
+
+.quatre {
+height: 500px;
+width: 20%;
+position: absolute;
+left: 37.5%;
+top: 20%
+}
+
+.premiere {
+height: 500px;
+width: 20%;
+position: absolute;
+left: 62.5%;
+top: 20%
+}
+
+.cours {
+    position: absolute;
+    width: 10%;
+    height: 5%;
+    top: 100px;
+    left: 100px;
+}
+
+.dropdown--hover {
+    position: relative;
+    z-index: 2;
+    margin-top: 16px;
+    text-align: center;
+
+    &:hover {
+        .dropdown-menu-container {
+            display: block;
+            border-radius: 20px;
+            text-align: center;
+        }
+    }
+}
+
+.dropdown--hover-2 {
+    @extend .dropdown--hover;
+    z-index: 1;
+    text-align: center;
+
+    &:hover {
+        .dropdown-menu-container {
+            display: block;
+            border-radius: 20px;
+            text-align: center;
+        }
+    }
+}
+
+.dropdown-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    cursor: pointer;
+    background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.28) 0%,
+    rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(30px);
+    border-radius: 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0.5px 0 1px rgba(255, 255, 255, 0.23) inset, 0 1px 0 0 rgba(255, 255, 255, 0.66) inset, 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.btnmaths {
+    font-size: 1rem;
+    text-align: center;
+    margin-left: 30px
+}
+
+.dropdown-menu-container {
+    position: absolute;
+    z-index: 12;
+    left: 0;
+    right: 0;
+    top: 75px;
+    display: none;
+    z-index: 10;
+    text-align: center;
+}
+
+.dropdown-menu {
+    position: absolute;
+    z-index: 11;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 0.25rem;
+    background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.28) 0%,
+    rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(30px);
+    border-radius: 20px;
+    box-shadow: 0 0.5px 0 1px rgba(255, 255, 255, 0.23) inset, 0 1px 0 0 rgba(255, 255, 255, 0.66) inset, 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.dropdown-menu-item { 
+    padding: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 17px;
+    text-align: center;
+
+    &:hover {
+        background-color: #000000;
+        color: #ffffff;
+    }
+}
+
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: --apple-system, Inter, sans-serif;
+    text-align: center;
+}
+
+.main_container {
+    width: 200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
